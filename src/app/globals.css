@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: sans-serif;
+}
+.char {
+  transform: translateY(100%);
+  display: block;
+}
+#my-text1 .word:nth-of-type(1) {
+  position: relative;
+  background: linear-gradient(to right, #d6e5be, #d6e5be);
+  border-radius: 20px;
+  background-position: left;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+}
+
+/* className="relative bg-gradient-to-l from-[] to-[] 
+                
+bg-no-repeat bg-[length:0%_100%]  bg-[right]  highliter" */
